@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid-Layout-Project</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap"
+      rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+      integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
+  </head>
+  <body>
+    <div class="outer-grid">
+      <header>
+        <div class="left-header">
+          <i class="fa-solid fa-bars" onclick="toggleNav()"></i>
+          <h2 class="logo">LOGO</h2>
+        </div>
+        <div class="right-header">
+          <div class="header-link">
+            <i class="fa-notdog fa-solid fa-video"></i>
+            <a href="">Video</a>
+          </div>
+          <div class="header-link">
+            <i class="fa-solid fa-paragraph"></i>
+            <a href="#">Article</a>
+          </div>
+        </div>
+      </header>
+      <nav class="hide-nav">
+        <div class="nav-link">
+          <i class="fas fa-home"></i>
+          <a href="">Home</a>
+        </div>
+        <div class="nav-link">
+          <i class="fas fa-user-circle"></i>
+          <a href="">Profile</a>
+        </div>
+        <div class="nav-link">
+          <i class="fas fa-dollar-sign"></i>
+          <a href="">Billing</a>
+        </div>
+      </nav>
+      <div class="inner-grid">
+        <main>
+          <article>
+            <h3>CSS Grid Practice</h3>
+            <p>
+              CSS Grid is a powerful layout module built directly into the CSS
+              language. Unlike previous layout techniques, it fundamentally
+              changes how we design user interfaces by shifting the layout
+              structure entirely into the style sheet rather than relying on
+              HTML markup.
+              <a
+                href="https://www.geeksforgeeks.org/css/interesting-facts-about-css-grid/"
+                >Click this Link</a
+              >
+              to know more about this.
+            </p>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Suscipit, voluptates.
+            </p>
+            <p>
+              CSS Grid works with two types of tracks: • Explicit Grid: Tracks
+              that you explicitly define using grid-template-columns and
+              grid-template-rows. • Implicit Grid: Tracks created automatically
+              by the browser when content exceeds the boundaries of your defined
+              grid. You can set default sizing rules for these using
+              grid-auto-rows and grid-auto-columns.
+              <a href="https://www.w3schools.com/css/css_grid.asp"
+                >Learn More.</a
+              >
+            </p>
+            <h3>Grid Mosaic Layout</h3>
+            <p>
+              A CSS Grid Mosaic Layout is a multi-column, multi-row design
+              technique that mimics traditional tiled art, allowing asymmetric
+              boxes to lock perfectly into a geometric layout. Unlike standard
+              uniform grids, it uses spanning properties to create visual
+              hierarchy
+            </p>
+            <div class="collage">
+              <img
+                class="collage-1"
+                src="https://picsum.photos/300/400?random=2"
+                alt="article" />
+              <img
+                class="collage-2"
+                src="https://picsum.photos/300/500?random=3"
+                alt="article" />
+              <img
+                class="collage-3"
+                src="https://picsum.photos/300/400?random=4"
+                alt="article" />
+            </div>
+            <p>
+              Neither is strictly "better" than the other; they are
+              complementary tools designed for different jobs.
+            </p>
+            <h3>The Core Setup Requires Only a Defined Column Axis</h3>
+            <p>
+              The "mosaic" effect relies on individual grid items breaking the
+              uniform structure by stretching across multiple tracks. • Items
+              are sized using the shorthand properties grid-column and grid-row.
+              For example, assigning grid-column: span 2; grid-row: span 2; to a
+              specific block (often called a "featured" tile) creates a large
+              focal point, while other items remain single-cell units
+            </p>
+
+            <h3>Spanning Properties Dictate Item Sizes</h3>
+            <p>
+              To build a classic mosaic, you only need to explicitly define the
+              columns on the parent container using the display: grid; property.
+              The rows do not need an explicit template because the browser’s
+              layout engine calculates them automatically based on the content
+            </p>
+            <h3>Images Must Be Specifically Tamed</h3>
+            <p>
+              Because mosaic layouts frequently handle portfolio images,
+              standard image rendering will break the grid lines. Achieving a
+              true mosaic requires constraining the media elements to prevent
+              overflow.
+            </p>
+          </article>
+        </main>
+        <aside>
+          <h2>Mosaic vs. Masonry Layouts</h2>
+          <p>
+            While often confused, a strict mosaic layout is structurally
+            different from a masonry (Pinterest-style) layout: Mosaic Layouts:
+            Constrained to rigid, overlapping horizontal and vertical track
+            lines. Elements must conform to a strict modular block matrix.
+            Masonry Layouts: Items have a fixed width but variable vertical
+            heights, causing items to shift upward into uneven columns.
+            Historically achieved via JavaScript, browsers are evolving to
+            handle this natively via newer features like grid-template-rows:
+            masonry; or dedicated layout types.
+          </p>
+          <img src="https://picsum.photos/300/300" alt="photo" />
+        </aside>
+        <footer>
+          <p>Created by <a href="#">Rishabh Verma</a></p>
+        </footer>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,9 @@
+- 🚀 **Project Overview:** A modern implementation of the classic **Holy Grail Layout** using **HTML5 and CSS Grid**.
+- 🧩 **Layout Structure:** Includes a structured **header, navigation/sidebar, main content area, secondary section, and footer**.
+- 🎨 **CSS Grid Focus:** Demonstrates practical use of **Grid containers, columns, rows, gaps, and template areas** for clean layouts.
+- 📱 **Responsive Design:** Built with responsive principles to provide a consistent experience across different screen sizes.
+- 💻 **Developer-Focused:** Designed to strengthen understanding of **CSS Grid fundamentals** and real-world page layout techniques.
+- ✨ **Clean & Maintainable:** Uses simple, organized HTML and CSS for better readability and easier customization.
+- 📚 **Learning Project:** Ideal for practicing modern CSS layout concepts while building a classic web design pattern.
+- 🌐 **Portfolio Ready:** A compact project that demonstrates practical frontend skills and attention to structured UI development.
+- 🔧 **Technologies:** HTML5, CSS3, and CSS Grid.
